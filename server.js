@@ -14,3 +14,28 @@ app.use(express.json());
 app.listen(PORT, function() {
     console.log("App listening on PORT " + PORT);
   });
+
+//   tables data
+var tables = [
+    {
+        routeName: "reserve",
+        name: "Fizzy",
+        phoneNumber: "8587897777",
+        email: "cc@yahoo.com",
+        userID: "fizzy123"
+    }
+];
+
+app.get("/", function(req, res) {
+    res.sendFile(path.join(__dirname, "index.html"));
+});
+
+app.get("/reserve", function(req, res) {
+    res.sendFile(path.join(__dirname, "reserve.html"));
+});
+
+app.get("/tables", function(req, res) {
+    res.sendFile(path.join(__dirname, "tables.html"));
+});
+
+
