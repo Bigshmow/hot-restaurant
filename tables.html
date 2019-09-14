@@ -1,14 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Table</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
-    integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 </head>
+
 <body>
-    
+
+    <div class="container">
+
+        <div class="jumbotron">
+            <h1 class="text-center"><span class="glyphicon glyphicon-fire"></span> Team 4's Kitchen <span
+                    class="glyphicon glyphicon-fire"></span></h1>
+            <hr>
+            <h2 class="text-center">Current reservations and waiting list</h2>
+            <br>
+
+            <div class="text-center">
+                <a href="./reserve"><button type="button" class="btn btn-lg btn-primary"><span
+                            class="glyphicon glyphicon-credit-card"></span> Make Reservation</button></a>
+                <a href="./index.html"><button type="button" class="btn btn-lg btn-danger"><span
+                            class="glyphicon glyphicon-home"></span></button></a>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="panel-heading panel-default">
+                        <h4 class="text-center">Currently dining</h4>
+                    </div>
+                    <div class="panel-body" id="seated">
+                    </div>
+
+                    <div class="panel-heading panel-default">
+                        <h4 class="text-center">Waitlisted</h4>
+                    </div>
+                    <div class="panel-body" id="waitlisted">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script> </script>
 </body>
+
 </html>
