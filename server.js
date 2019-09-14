@@ -22,7 +22,7 @@ var tables = [
         name: "Fizzy",
         phoneNumber: "8587897777",
         email: "cc@yahoo.com",
-        userID: "fizzy123"
+        unique: "fizzy123"
     }
 ];
 
@@ -36,7 +36,17 @@ app.get("/reserve", function(req, res) {
 
 app.get("/tables", function(req, res) {
     res.sendFile(path.join(__dirname, "tables.html"));
-    return res.json(tables);    
+    return res.json(tables);
 });
+
+app.post("/reserve", function(res, res) {
+    var newRes = req.body;
+    newRes.routeName = newRes.name.replace(/\s+/g, "").toLowerCase();
+    console.log(newRes);
+    tables.push(newRes);
+    res.json(newRes);
+});
+
+
 
 
